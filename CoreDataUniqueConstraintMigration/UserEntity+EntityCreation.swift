@@ -15,6 +15,7 @@ extension UserEntity {
         entity.uniqueId = id
         entity.name = name
         entity.age = age
+        context.mergePolicy = NSMergePolicy.mergeByPropertyObjectTrump
         try context.saveToStore()
     }
 
